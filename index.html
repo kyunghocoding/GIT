@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv=“refresh” content=“10”>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JAVASCRIPT 최종과제</title>
+   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="calculator">
-    <div id="display" class="display"></div>
-    <div class="buttons">
-        <button class="button AC" onclick="clearDisplay()">AC</button>
-        <button class="button" onclick="deleteLast()">DEL</button>
-        <button class="button sign" onclick="appendToDisplay('/')">÷</button>
-        
-        <button class="button" onclick="appendToDisplay('7')">7</button>
-        <button class="button" onclick="appendToDisplay('8')">8</button>
-        <button class="button" onclick="appendToDisplay('9')">9</button>
-        <button class="button sign" onclick="appendToDisplay('*')">×</button>
-        
-        <button class="button" onclick="appendToDisplay('4')">4</button>
-        <button class="button" onclick="appendToDisplay('5')">5</button>
-        <button class="button" onclick="appendToDisplay('6')">6</button>
-        <button class="button sign" onclick="appendToDisplay('-')">−</button>
-        
-        <button class="button" onclick="appendToDisplay('1')">1</button>
-        <button class="button" onclick="appendToDisplay('2')">2</button>
-        <button class="button" onclick="appendToDisplay('3')">3</button>
-        <button class="button sign" onclick="appendToDisplay('+')">+</button>
-        
-        <button class="button zero" onclick="appendToDisplay('0')">0</button>
-        <button class="button" onclick="appendToDisplay('.')">.</button>
-        <button class="button sign equal" onclick="calculateResult()">=</button>
-    </div>
-</div>
-
-<script src="script.js"></script>
+   <div class="calculator-container">
+      <div class="title-button">
+        <button class="close"></button>
+        <button class="minimize"></button>
+        <button class="maximize"></button>
+      </div>
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+         <button class="button clear" value="C">C</button>
+         <button class="button function" value="±">±</button>
+         <button class="button function" value="%">%</button>
+         <button class="button operator" value="/">/</button>
+         <button class="button number" value="7">7</button>
+         <button class="button number" value="8">8</button>
+         <button class="button number" value="9">9</button>
+         <button class="button operator" value="*">*</button>
+         <button class="button number" value="4">4</button>
+         <button class="button number" value="5">5</button>
+         <button class="button number" value="6">6</button>
+         <button class="button operator" value="-">-</button>
+         <button class="button number" value="1">1</button>
+         <button class="button number" value="2">2</button>
+         <button class="button number" value="3">3</button>
+         <button class="button operator" value="+">+</button>
+         <button class="button zero number" value="0">0</button>
+         <button class="button number" value=".">.</button>
+         <button class="button operator" value="=">=</button>
+       </div>
+     </div>
+  </div>
+   </div>
+   <script src="script.js"></script>
 </body>
 </html>
