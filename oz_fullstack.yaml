@@ -1,8 +1,11 @@
 team: oz_fullstack
 
-leader: 경호
+leader: 성훈
+
+coach: 민혁
 
 member:
-  - 준호
-  - 은영
-  - 성구
+- 남욱
+- 다경
+- 정훈
+- 영철
